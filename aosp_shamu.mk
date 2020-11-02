@@ -18,8 +18,11 @@ TARGET_SCREEN_HEIGHT := 2560
 TARGET_SCREEN_WIDTH := 1440
 TARGET_BOOTANIMATION_HALF_RES := true
 
-# Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/havoc/config/common_mini_phone.mk)
+# Inherit some common EvolutionX stuff.
+$(call inherit-product, vendor/aos/config/common_mini_phone.mk)
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_GAPPS_ARCH := arm
+WITH_GAPPS := true
 
 # Inherit from the common Open Source product configuration
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
@@ -31,7 +34,7 @@ $(call inherit-product, $(LOCAL_PATH)/device.mk)
 $(call inherit-product, vendor/motorola/shamu/shamu-vendor.mk)
 
 # Device identifier. This must come after all inclusions
-PRODUCT_NAME := havoc_shamu
+PRODUCT_NAME := aosp_shamu
 PRODUCT_DEVICE := shamu
 PRODUCT_BRAND := google
 PRODUCT_MODEL := Nexus 6

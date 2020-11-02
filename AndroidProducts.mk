@@ -16,10 +16,10 @@
 #
 
 PRODUCT_MAKEFILES += \
-    $(LOCAL_DIR)/havoc_shamu.mk
+    $(LOCAL_DIR)/aosp_shamu.mk
 
 COMMON_LUNCH_CHOICES := \
-    havoc_shamu-user \
-    havoc_shamu-userdebug \
-    havoc_shamu-eng
+    aosp_shamu-user \
+    aosp_shamu-userdebug \
+    aosp_shamu-eng
 
